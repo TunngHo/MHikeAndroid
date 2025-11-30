@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/hike_background"
+    android:padding="16dp"
+    android:layout_marginTop="96dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="List of Observations"
+        android:textColor="@color/hike_green_primary"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnAddObs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add New Observation"
+        android:background="@drawable/button_accent_orange"
+        android:textColor="@color/white"
+        android:padding="16dp"/>
+
+    <Button
+        android:id="@+id/btnBackToHikeList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:textColor="@color/text_secondary"
+        android:layout_marginBottom="8dp"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerObservations"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:paddingBottom="8dp"/>
+</LinearLayout>

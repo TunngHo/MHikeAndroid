@@ -1,0 +1,145 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/hike_background"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:layout_marginTop="96dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create a New Hike"
+            android:textColor="@color/hike_green_primary"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp"/>
+
+        <EditText
+            android:id="@+id/edtName"
+            android:hint="Hike name *"
+            android:inputType="textCapWords"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_background"
+            android:padding="16dp"
+            android:layout_marginBottom="12dp"/>
+
+        <EditText
+            android:id="@+id/edtLocation"
+            android:hint="Location *"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_background"
+            android:padding="16dp"
+            android:layout_marginBottom="12dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="12dp">
+
+            <Button
+                android:id="@+id/btnSelectDate"
+                android:text="Select Date *"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_accent_orange"
+                android:textColor="@color/white"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"/>
+
+            <TextView
+                android:id="@+id/txtDate"
+                android:text="No date selected yet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="16dp"
+                android:textColor="@color/text_primary"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+        <Spinner
+            android:id="@+id/spnParking"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_background"
+            android:padding="16dp"
+            android:layout_marginBottom="12dp"
+            android:autofillHints="Parking" />
+
+        <EditText
+            android:id="@+id/edtLength"
+            android:hint="Hike length (km) *"
+            android:inputType="numberDecimal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_background"
+            android:padding="16dp"
+            android:layout_marginBottom="12dp"/>
+
+        <Spinner
+            android:id="@+id/spnDifficulty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_background"
+            android:padding="16dp"
+            android:layout_marginBottom="12dp"
+            android:autofillHints="Difficulty" />
+
+        <EditText
+            android:id="@+id/edtDescription"
+            android:hint="Description (tùy chọn)"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_background"
+            android:padding="16dp"
+            android:layout_marginBottom="12dp"
+            android:minLines="3"
+            android:gravity="top"/>
+
+        <EditText
+            android:id="@+id/edtWeather"
+            android:hint="Desired Weather (tùy chọn)"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_background"
+            android:padding="16dp"
+            android:layout_marginBottom="12dp"/>
+
+        <EditText
+            android:id="@+id/edtEquipment"
+            android:hint="Recommended equipment (tùy chọn)"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_background"
+            android:padding="16dp"
+            android:layout_marginBottom="24dp"/>
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:text="Submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_primary_green"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:padding="16dp"/>
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:text="Cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:textColor="@color/text_secondary"
+            android:layout_marginTop="8dp"/>
+    </LinearLayout>
+</ScrollView>

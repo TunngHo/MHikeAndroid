@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="hike_green_primary">#388E3C</color>
+    <color name="hike_green_dark">#2E7D32</color>
+    <color name="hike_accent_orange">#FF9800</color>
+
+    <color name="hike_background">#F5F5F5</color>
+    <color name="card_background">#FFFFFFFF</color>
+
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#757575</color>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/hike_background"
+    tools:context=".HikeDetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_marginTop="96dp">
+
+        <TextView
+            android:id="@+id/detailTxtName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="@color/hike_green_primary"
+            android:layout_marginBottom="8dp"
+            tools:text="Climb Mount Everest" />
+
+        <TextView
+            android:id="@+id/detailTxtLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:layout_marginBottom="16dp"
+            tools:text="Himalayas, Nepal" />
+
+        <!-- Các chi tiết khác -->
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="1"
+            android:rowCount="6"
+            android:useDefaultMargins="true">
+
+            <TextView android:id="@+id/detailTxtDate" style="@style/DetailTextStyle" tools:text="Date: 2024-12-25" />
+            <TextView android:id="@+id/detailTxtParking" style="@style/DetailTextStyle" tools:text="Parking: Yes" />
+            <TextView android:id="@+id/detailTxtLength" style="@style/DetailTextStyle" tools:text="Length: 8848m" />
+            <TextView android:id="@+id/detailTxtDifficulty" style="@style/DetailTextStyle" tools:text="Difficulty: Very Hard" />
+            <TextView android:id="@+id/detailTxtWeather" style="@style/DetailTextStyle" tools:text="Weather: Snowy" />
+            <TextView android:id="@+id/detailTxtEquipment" style="@style/DetailTextStyle" tools:text="Equipment: Oxygen Tank" />
+        </GridLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="Description"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/detailTxtDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            tools:text="A detailed description of the hike, including notable landmarks, challenges, and beautiful views. This text can be quite long and will wrap as needed." />
+
+        <Button
+            android:id="@+id/btnViewObservations"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View Observations"
+            android:layout_marginTop="12dp"/>
+
+        <Button
+            android:id="@+id/btnEditHike"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Edit Hike"
+            android:layout_marginTop="2dp"/>
+
+        <Button
+            android:id="@+id/btnBackToList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:textColor="@color/text_secondary"
+            android:layout_marginBottom="2dp"/>
+
+
+    </LinearLayout>
+</ScrollView>

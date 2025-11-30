@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Nền bo tròn cho các nút nhấn (màu cam) -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="@color/hike_accent_orange" />
+    <corners android:radius="12dp" />
+</shape>
